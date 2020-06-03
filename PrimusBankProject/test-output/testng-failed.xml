@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PrimusBank Test Suite]">
+  <parameter name="uname" value="john"/>
+  <parameter name="pword" value="demo"/>
+  <parameter name="brname" value="Ameerpet"/>
+  <test name="Admin Login TestCase">
+    <parameter name="uname" value="Admin1"/>
+    <parameter name="pword" value="Admin1"/>
+    <classes>
+      <class name="primusbank.tests.AdminLoginTest"/>
+    </classes>
+  </test> <!-- Admin Login TestCase -->
+  <test name="Banker Login TestCase">
+    <parameter name="uname" value="john"/>
+    <parameter name="pword" value="demo"/>
+    <parameter name="brname" value="Ameerpet"/>
+    <classes>
+      <class name="primusbank.tests.BankerLoginTest"/>
+    </classes>
+  </test> <!-- Banker Login TestCase -->
+</suite> <!-- Failed suite [PrimusBank Test Suite] -->
